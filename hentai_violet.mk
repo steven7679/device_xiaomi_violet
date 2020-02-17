@@ -14,7 +14,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, device/xiaomi/violet/device.mk)
 
 # Inherit some common PixelExperience stuff.
-TARGET_BOOT_ANIMATION_RES := 1080
 $(call inherit-product, vendor/hentai/config/common_telephony.mk)
 
 # Device identifier. This must come after all inclusions.
