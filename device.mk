@@ -30,6 +30,10 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-pe
 
+# Soong Namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    hardware/qcom/sm8150/display
+
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # Device uses high-density artwork where available
