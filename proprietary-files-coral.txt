@@ -96,6 +96,12 @@ vendor/lib64/libmm-color-convertor.so
 vendor/lib64/libmmosal_proprietary.so
 vendor/lib64/libswvdec.so
 
+# Configstore - from coral-user 10 QQ1B.200205.002 6084387-release-keys
+-vendor/lib/libplatformconfig.so
+-vendor/lib64/libplatformconfig.so
+vendor/lib/vendor.qti.hardware.capabilityconfigstore@1.0.so
+vendor/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so
+
 # Postprocessing - from coral-user 10 QQ1B.200205.002 6084387-release-keys
 vendor/lib/libdisp-aba.so
 vendor/lib/libdisplayqos.so
