@@ -42,10 +42,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.dpm.nsrm.bkg.evt=3955 \
     ro.vendor.use_data_netmgrd=true
 
-# Ccodec
+# Enable Codec 2.0
 PRODUCT_PROPERTY_OVERRIDES += \
-    debug.stagefright.omx_default_rank.sw-audio=1 \
-    debug.stagefright.omx_default_rank=0
+    debug.media.codec2=2 \
+    debug.stagefright.ccodec=4 \
+    debug.stagefright.omx_default_rank=512
+
+# Create input surface on the framework side
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.stagefright.c2inputsurface=-1
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
