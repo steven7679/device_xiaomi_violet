@@ -14,10 +14,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, device/xiaomi/violet/device.mk)
 
 # Inherit some common PixelExperience stuff.
-$(call inherit-product, vendor/hentai/config/common_telephony.mk)
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_GAPPS_ARCH := arm64
+TARGET_INCLUDE_WIFI_EXT := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+$(call inherit-product, vendor/aosp/config/common_telephony.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := hentai_violet
+PRODUCT_NAME := aosp_violet
 PRODUCT_DEVICE := violet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7 Pro
